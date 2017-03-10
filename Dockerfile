@@ -2,7 +2,7 @@ FROM ruby:2.4
 
 ENV RAILS_ENV production
 
-RUN apt-get update -qq && apt-get install -y libpq-dev nodejs
+RUN apt-get update -qq && apt-get install -y libpq-dev nodejs netcat
 
 RUN mkdir /blog
 
